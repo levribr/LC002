@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Fabiola Alves - Levri Página</title>
+</head>
+<body>
+
+  <div id="top-banner">
+    <img src="./assets/therapist.jpg" alt="">
+  </div>
+
+  <div id="container">
+    <div id="profile"> 
+      <img src="./assets/profile.png" alt="Foto de Perfil do Criador">
+      <h2 id="name">Fabiola Alves</h2>
+      <h3 id="role">PSICÓLOGA | MASTER COACH</h3>
+    </div>
+
+    <p id="bio">Ajuda pessoas a alcançarem seu potencial máximo, superarem desafios e transformarem suas vidas. Com sua abordagem única, ela capacita indivíduos a transformarem padrões negativos, fortalecerem relacionamentos e viverem uma vida equilibrada e satisfatória.</p>
+
+    <div id="bio-icons">
+
+      <div id="bio-icons-description">
+      <a href="#"> 
+      <ion-icon name="navigate-circle-outline"></ion-icon>
+      </a>
+      <p>Atendimento Presencial e Online</p>
+      </div>
+
+      <div id="bio-icons-description">
+      <a href="#"> 
+      <ion-icon name="time-outline"></ion-icon>
+      </a>
+      <p>Seg à Sex - 08h às 18h</p>
+      </div>
+
+    </div>
+
+    <!-- SCHEDULING -->
+
+    <!-- LINKS -->
+
+    <ul id="main-links">
+      <li>
+        <a href="https://www.levri.com.br/" target="_blank">Acesse meu Curso</a>
+      </li>
+
+      <li>
+        <a href="https://wa.me/5522997073628?&text=Vim pela sua Página Levri e quero marcar uma consulta">Marque sua 1ª Consulta</a>
+      </li>
+
+      <li>
+        <a href="#" onclick="toggleDiv(event)">Marque seu Horário</a>
+        <div style="display: none;">
+          <!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
+<script type="text/javascript">
+(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", {origin:"https://app.cal.com"});
+
+Cal("inline", {
+  elementOrSelector:"#my-cal-inline",
+  calLink: "levri/fabiola-teste"
+});
+
+Cal("ui", {"styles":{"branding":{"brandColor":"#3850e2"}},"hideEventTypeDetails":false,"layout":"month_view"});
+</script>
+<!-- Cal inline embed code ends -->
+        </div>
+      </li>
+    </ul>
+
+    <script>
+      function toggleDiv(event) {
+        event.preventDefault();
+        var div = event.target.nextElementSibling;
+        div.style.display = div.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    
+    <!-- SOCIAL LINKS -->
+
+    <div id="social-links">
+
+      <a href="https://www.instagram.com/fabiolaalvescoach/" target="_blank"> 
+      <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      
+      <a href="https://wa.me/5522997073628?&text=Oi. Vim pela sua Página Levri" target="_blank"> 
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+
+    </div>
+
+    <footer id="footer">
+     <a href="https://www.levri.com.br" target="_blank"> 
+     <img src="./assets/levri-logo_nobg.png" alt="">
+     </a>
+     <a href="https://api.whatsapp.com/send?phone=5511969066253&text=Ol%C3%A1,%20vim%20da%20Levri%20e%20quero%20criar%20a%20minha%20p%C3%A1gina." target="_blank">crie sua página</a>
+    </footer>
+
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
